@@ -1,0 +1,38 @@
+/* General body styling */
+body {
+    background-color: #f0f8ff;
+    color: #003366;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #00509e;
+}
+
+/* Sidebar styling */
+.sidebar .sidebar-content {
+    background-color: #e6f2ff;
+}
+
+/* Input fields */
+.stTextInput, .stNumberInput, .stTextArea {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #003366;
+}
+
+/* Header section */
+h1, h2, h3, h4 {
+    color: #003366;
+}
