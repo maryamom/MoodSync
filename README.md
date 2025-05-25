@@ -7,15 +7,15 @@
 
 ---
 
-## **✨ Key Features**  
+## ** Key Features**  
 - **Real-Time Emotion Analysis**:  
-  - 🎤 **Audio Agent**: OpenAI Whisper transcribes speech → GPT-4 detects emotions (e.g., sadness, anxiety) and intensity.  
-  - 📝 **Session Summaries**: GPT-4 generates structured reports with emotional trends and therapeutic insights.  
+  -  **Audio Agent**: OpenAI Whisper transcribes speech → GPT-4 detects emotions (e.g., sadness, anxiety) and intensity.  
+  -  **Session Summaries**: GPT-4 generates structured reports with emotional trends and therapeutic insights.  
 - **Adaptive Environment**:  
-  - 🎵 **Music Agent**: GPT-3.5 + Spotify API curates playlists based on detected emotions (e.g., calming music for anxiety).  
-  - 💡 **Visual Agent**: Philips Hue SDK adjusts lighting (warm for calm, blue for melancholy) via local network.  
+  -  **Music Agent**: GPT-3.5 + Spotify API curates playlists based on detected emotions (e.g., calming music for anxiety).  
+  -  **Visual Agent**: Philips Hue SDK adjusts lighting (warm for calm, blue for melancholy) via local network.  
 - **Therapist Dashboard**:  
-  - 📊 Built with **Streamlit** for real-time monitoring of transcripts, emotional trends, and session history.  
+  -  Built with **Streamlit** for real-time monitoring of transcripts, emotional trends, and session history.  
 
 ---
 
@@ -37,7 +37,7 @@
 #### **3. Visual Agent**  
 - **Smart Lighting**:  
   - *Philips Hue SDK* adjusts room lighting (color, brightness) based on real-time emotions:  
-    - 🔵 *Blue* for melancholy, 🔶 *Warm* for calm, etc.  
+    - *Blue* for melancholy,  *Warm* for calm, etc.  
   - Requires local network access to Hue Bridge.  
 
 #### **4. Therapist Dashboard**  
@@ -71,16 +71,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run therapist_dashboard.py  # Launch dashboard  
 python audio_agent.py                # Start real-time analysis  
-```  
-## **📂 Repository Structure**  
-```plaintext
-MoodSync/  
-├── audio_agent.py          # Speech → Emotion analysis (Whisper + GPT-4)  
-├── music_agent.py          # Spotify playlist generation  
-├── visual_agent.py         # Philips Hue lighting control  
-├── therapist_dashboard/    # Streamlit UI  
- 
-
 
 ```
 ## **🎉 Acknowledgments**
