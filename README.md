@@ -65,7 +65,7 @@ MoodSync/
 ├── therapist_dashboard/    # Streamlit UI  
  
 
-
+---
 ## **🎉 Acknowledgments**  
 - **Team**:
 -  Fatma Gamha
@@ -74,3 +74,4 @@ MoodSync/
 - Molka Essid
 - Aziz Dachraoui 
   
+
