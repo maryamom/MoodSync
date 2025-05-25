@@ -19,14 +19,30 @@
 
 ---
 
-## **🛠️ Technical Architecture**  
-*(Multi-agent system: Audio → Music → Visual → Dashboard)*  
+### **Core Architecture**  
 
-### **Core Components**  
-1. **Audio Processing**: Whisper (STT) → GPT-4 (emotion analysis) → PostgreSQL (session storage).  
-2. **Music Integration**: Emotion labels → GPT-3.5 (query generator) → Spotipy (playlist fetcher).  
-3. **Lighting Control**: Hue Bridge API adjusts colors/brightness dynamically.  
-4. **Dashboard**: Streamlit visualizes data with interactive charts and session playback.  
+#### **1. Audio Processing Pipeline**  
+- **Speech-to-Text**:  
+  - Uses *OpenAI Whisper* to transcribe patient speech in real time.  
+- **Emotion Analysis**:  
+  - *GPT-4* processes transcribed text to detect emotions (e.g., anxiety, calm) and their intensity.  
+- **Session Storage**:  
+  - Structured summaries (emotional trends, key insights) are saved to *PostgreSQL* for therapist review.  
+
+#### **2. Music Agent**  
+- **Dynamic Playlists**:  
+  - *GPT-3.5* converts emotion labels (e.g., "anxiety) into Spotify search queries.  
+  - *Spotipy* fetches and plays matched playlists via authenticated user sessions.  
+
+#### **3. Visual Agent**  
+- **Smart Lighting**:  
+  - *Philips Hue SDK* adjusts room lighting (color, brightness) based on real-time emotions:  
+    - 🔵 *Blue* for melancholy, 🔶 *Warm* for calm, etc.  
+  - Requires local network access to Hue Bridge.  
+
+#### **4. Therapist Dashboard**  
+- **Real-Time Monitoring**:  
+  - *Streamlit* interface shows live transcripts, emotion timelines, and session history.  
 
 ---
 
@@ -65,13 +81,14 @@ MoodSync/
 ├── therapist_dashboard/    # Streamlit UI  
  
 
----
-## **🎉 Acknowledgments**  
+
+## **🎉 Acknowledgments**
+```
 - **Team**:
 -  Fatma Gamha
 - Rami Lazghab
 - Ghada Dhaoui
 - Molka Essid
-- Aziz Dachraoui 
-  
+- Aziz Dachraoui
+- ```
 
