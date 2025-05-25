@@ -82,13 +82,14 @@ MoodSync/
  
 
 
-## **🎉 Acknowledgments**
 ```
-- **Team**:
+## **🎉 Acknowledgments**
+ **Team**:
+  
 -  Fatma Gamha
 - Rami Lazghab
 - Ghada Dhaoui
 - Molka Essid
 - Aziz Dachraoui
-- ```
+ ```
 
